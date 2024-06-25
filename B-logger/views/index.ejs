@@ -1,0 +1,18 @@
+<%- include("./partials/header.ejs") %>
+
+<div>
+    <% if (blogPosts.length===0) { %>
+        <% console.log("herettt"); %>
+        <p>No blog posts yet.</p>
+    <% } else { %>
+        <ul style="display: block;">
+        <% blogPosts.forEach(post => { %>
+               <li class="lala"> <a style="text-decoration: underline;"  href="/blogpage/<%=post.id%>"><%= post.title %></a></li>
+        <% }) %>
+        </ul>
+    <% } %>
+</div>
+
+    </main>
+</body>
+</html>

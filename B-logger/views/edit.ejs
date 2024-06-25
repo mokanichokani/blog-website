@@ -1,0 +1,14 @@
+<%- include("./partials/header.ejs") %>
+
+<form action="/edit/<%= post.id %>" method="post">
+    <p><label>Title:</label></p>
+    <textarea name="blog1" rows="1" cols="50"><%= post.title %></textarea>
+    <p><label>Blog:</label></p>
+    <textarea name="blog2" rows="12" cols="50"><%= post.content %></textarea>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+    </main>
+</body>
+</html>
